@@ -20,7 +20,7 @@ A simple and interactive Dice Game built using **HTML**, **CSS**, and **JavaScri
 
 ## 🖼️ Preview
 
-   -
+   - https://mehedihasantsx.github.io/Dice_Game/
 
 ## 📦 Tech Stack
 
