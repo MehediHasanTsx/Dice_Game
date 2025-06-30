@@ -1,0 +1,217 @@
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #6333ff, #f192fe) no-repeat;
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1380px;
+    margin: auto;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #080825;
+    background-image: url(/assets/wrapper_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.head_text {
+    font-size: 48px;
+    height: 44px;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    background-clip: text;
+    color: transparent;
+}
+
+.head_dice,
+image {
+    width: 60px;
+    height: 60px;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+}
+
+.player_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 230px;
+    height: 270px;
+    background-color: #16161e;
+    border-radius: 18px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    height: 36px;
+    align-items: center;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    background-clip: text;
+    color: transparent;
+
+}
+
+.dice_player {
+    width: 70px;
+    height: 70px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.chicken_img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+#counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 130px;
+    color: black;
+    text-align: center;
+    background-color: #f6f4f1;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+#roll_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 130px;
+    color: #f6f4f1;
+    text-align: center;
+    background-color: #6333ff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#reset_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 130px;
+    color: black;
+    text-align: center;
+    background-color: #f6f4f1;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.roll_img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: 58%;
+}
+
+.reset_img {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: 23%;
+}
+
+.footer_text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f6f4f1;
+    text-align: center;
+}
