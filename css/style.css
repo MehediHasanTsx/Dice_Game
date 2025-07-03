@@ -40,6 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 
@@ -48,9 +49,69 @@ body {
     height: 44px;
     text-align: center;
     font-weight: 700;
-    background: linear-gradient(90deg, #6333ff, #f192fe);
-    background-clip: text;
-    color: transparent;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #7753ed6d;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 1.3s step-end infinite;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: infinite, infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+        color: white;
+        /* background: linear-gradient(90deg, #6333ff, #f192fe);
+        background-clip: text;
+        color: transparent; */
+    }
+
+    50% {
+        width: 50%;
+        background: linear-gradient(90deg, #6333ff, #f192fe);
+        background-clip: text;
+        color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        background: linear-gradient(90deg, #6333ff, #f192fe);
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: #7753ed6d;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+@keyframes fadeIn {
+
+    /* for page loading animation */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.head_dice {
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 .head_dice,
@@ -63,11 +124,11 @@ image {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
+    gap: 40px;
     padding: 10px;
 }
 
-.player_1 {
+#player_1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,6 +142,44 @@ image {
     height: 270px;
     background-color: #16161e;
     border-radius: 18px;
+    animation: fadeIn 0.8s ease-out forwards;
+    box-shadow: 2px 4px 10px 6px #7753ed6d;
+}
+
+#player_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 230px;
+    height: 270px;
+    background-color: #16161e;
+    border-radius: 18px;
+    animation: fadeIn 1s ease-out forwards;
+    box-shadow: 2px 4px 10px 6px #7753ed6d;
+}
+
+#player_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 230px;
+    height: 270px;
+    background-color: #16161e;
+    border-radius: 18px;
+    animation: fadeIn 1.2s ease-out forwards;
+    box-shadow: 2px 4px 10px 6px #7753ed6d;
 }
 
 h2 {
@@ -91,7 +190,7 @@ h2 {
     background: linear-gradient(90deg, #6333ff, #f192fe);
     background-clip: text;
     color: transparent;
-
+    text-shadow: 2px 6px 4px #7753ed6d;
 }
 
 .dice_player {
@@ -107,13 +206,16 @@ h2 {
     gap: 10px;
 }
 
-.result {
+#result {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    animation: fadeIn 1.2s ease-out forwards;
+    text-shadow: 2px 6px 4px #7753ed6d;
 }
+
 
 .chicken_img {
     width: 60px;
@@ -148,7 +250,30 @@ h2 {
     background-color: #f6f4f1;
     border-radius: 13px;
     cursor: pointer;
+    animation: fadeIn 1.3s ease-out forwards;
+    box-shadow: 2px 4px 7px 2px rgb(88, 88, 88);
 }
+
+#counter:hover {
+    color: white;
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#counter:focus {
+    color: rgb(202, 196, 12);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+}
+
+#counter:active {
+    color: rgb(39, 195, 80);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+}
+
 
 #roll_btn {
     display: flex;
@@ -162,11 +287,34 @@ h2 {
     font-size: 24px;
     font-weight: 600;
     width: 130px;
+    height: 30px;
     color: #f6f4f1;
     text-align: center;
     background-color: #6333ff;
     border-radius: 15px;
     cursor: pointer;
+    animation: fadeIn 1.3s ease-out forwards;
+    box-shadow: 2px 4px 7px 2px rgb(88, 88, 88);
+}
+
+#roll_btn:hover {
+    color: black;
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#roll_btn:focus {
+    color: rgb(202, 196, 12);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+}
+
+#roll_btn:active {
+    color: rgb(39, 195, 80);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
 }
 
 #reset_btn {
@@ -181,12 +329,36 @@ h2 {
     font-size: 24px;
     font-weight: 600;
     width: 130px;
+    height: 30px;
     color: black;
     text-align: center;
     background-color: #f6f4f1;
     border-radius: 15px;
     align-items: center;
     cursor: pointer;
+    animation: fadeIn 1.3s ease-out forwards;
+    box-shadow: 2px 4px 7px 2px rgb(88, 88, 88);
+
+}
+
+#reset_btn:hover {
+    color: white;
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#reset_btn:focus {
+    color: rgb(202, 196, 12);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+}
+
+#reset_btn:active {
+    color: rgb(39, 195, 80);
+    box-shadow: 3px 5px 8px 3px #7753ed6d;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
 }
 
 .roll_img {
@@ -195,8 +367,8 @@ h2 {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
-    right: 58%;
+    left: 25px;
+    right: auto;
 }
 
 .reset_img {
@@ -205,8 +377,8 @@ h2 {
     position: absolute;
     top: auto;
     bottom: auto;
-    left: auto;
-    right: 23%;
+    left: 20px;
+    right: auto;
 }
 
 .footer_text {
