@@ -13,7 +13,6 @@ body {
     align-items: center;
     max-width: 1380px;
     margin: auto;
-
 }
 
 .wrapper {
@@ -62,10 +61,9 @@ body {
 @keyframes typing {
     0% {
         width: 0%;
-        color: white;
-        /* background: linear-gradient(90deg, #6333ff, #f192fe);
+        background: linear-gradient(90deg, #6333ff, #f192fe);
         background-clip: text;
-        color: transparent; */
+        color: transparent;
     }
 
     50% {
@@ -213,7 +211,45 @@ h2 {
     align-items: center;
     gap: 20px;
     animation: fadeIn 1.2s ease-out forwards;
+}
+
+#result_text {
+    font-size: 32px;
+    font-weight: 700;
+    height: 36px;
+    align-items: center;
+    color: white;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    /* overflow: hidden; */
+}
+
+#result_text::before {
+    content: attr(data-result_text);
+    position: absolute;
+    background: linear-gradient(90deg, #6333ff, #f192fe);
+    background-clip: text;
+    color: transparent;
+    border-right: 3px solid #7753ed6d;
+    animation: text 3.5s infinite;
     text-shadow: 2px 6px 4px #7753ed6d;
+    overflow: hidden;
+}
+
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+
+    80% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
 }
 
 
