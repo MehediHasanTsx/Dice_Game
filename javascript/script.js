@@ -1,3 +1,10 @@
+const reset = document.getElementById("reset_btn");
+
+reset.addEventListener("click", function()
+{
+    location.reload();
+}
+);
 
 const roll_button = document.getElementById("roll_btn");
 
@@ -8,7 +15,6 @@ const dice_image_3 = document.getElementById("dice_three");
 const roll_label_one = document.getElementById("roll_label_1");
 const roll_label_two = document.getElementById("roll_label_2");
 const roll_label_three = document.getElementById("roll_label_3");
-
 
 
 const min_rng = 1;
@@ -31,5 +37,5 @@ roll_button.onclick = function () {
 }
 
 
-// const max_rolls = 10;
-// let roll_count = 0;
+//counter
+

@@ -196,6 +196,13 @@ h2 {
     height: 70px;
 }
 
+.dice_and_value{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
 .score {
     display: flex;
     flex-direction: row;
