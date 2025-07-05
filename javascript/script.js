@@ -48,7 +48,7 @@ roll_button.onclick = function () {
 
     if (count < 5) {
         count++;
-        countlabel.textContent = `Rolled ${count}/10`;
+        countlabel.textContent = `Rolled ${count}/5`;
 
         score1 += randomnum_rng_1;
         score_1.textContent = score1;
