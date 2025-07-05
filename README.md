@@ -1,4 +1,4 @@
-# 🎲 Dice game
+# 🎲 Roll your dice
 
 A simple and interactive Dice Game built using **HTML**, **CSS**, and **JavaScript**.
 
