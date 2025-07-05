@@ -18,15 +18,10 @@ A simple and interactive Dice Game built using **HTML**, **CSS**, and **JavaScri
 - Event handling
 - Working with images dynamically
 
-
 <a href="https://mehedihasantsx.github.io/Dice_Game/" target="_blank"> 🖼️ Preview the game</a>
-
 
 ## 📦 Tech Stack
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
-
- 
-
+- JavaScript

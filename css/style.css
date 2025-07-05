@@ -5,7 +5,6 @@ body {
     background-size: cover;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
@@ -22,7 +21,7 @@ body {
     justify-content: center;
     gap: 30px;
     background-color: #00002f;
-    background-image: url(/assets/wrapper_bg.png);
+    background-image: url(/assets/wrapper-bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,8 +129,8 @@ image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px;
@@ -148,8 +147,8 @@ image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px;
@@ -166,8 +165,8 @@ image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 25px;
@@ -189,18 +188,12 @@ h2 {
     background-clip: text;
     color: transparent;
     text-shadow: 2px 6px 4px #7753ed6d;
+    margin: 5px;
 }
 
 .dice_player {
-    width: 70px;
-    height: 70px;
-}
-
-.dice_and_value{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    width: 65px;
+    height: 65px;
 }
 
 .score {
@@ -229,7 +222,6 @@ h2 {
     white-space: nowrap;
     position: relative;
     display: inline-block;
-    /* overflow: hidden; */
 }
 
 #result_text::before {
@@ -244,7 +236,6 @@ h2 {
     overflow: hidden;
 }
 
-
 @keyframes text {
     0% {
         width: 0;
@@ -258,7 +249,6 @@ h2 {
         width: 0;
     }
 }
-
 
 .chicken_img {
     width: 60px;
@@ -316,7 +306,6 @@ h2 {
     box-shadow: 3px 5px 8px 3px #7753ed6d;
     background: linear-gradient(90deg, #6333ff, #f192fe);
 }
-
 
 #roll_btn {
     display: flex;
@@ -381,7 +370,6 @@ h2 {
     cursor: pointer;
     animation: fadeIn 1.3s ease-out forwards;
     box-shadow: 2px 4px 7px 2px rgb(88, 88, 88);
-
 }
 
 #reset_btn:hover {
