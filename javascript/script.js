@@ -49,10 +49,20 @@ roll_button.onclick = function () {
     if (count < 10) {
         count++;
         countlabel.textContent = `Rolled ${count}/10`;
+
+        score1 += randomnum_rng_1;
+        score_1.textContent = score1;
+
+        score2 += randomnum_rng_2;
+        score_2.textContent = score2;
+
+        score3 += randomnum_rng_3;
+        score_3.textContent = score3;
     }
     if (count == 10) {
         countlabel.textContent = "Game over";
-
+        roll_button.disabled = true;
     }
+
 }
 
