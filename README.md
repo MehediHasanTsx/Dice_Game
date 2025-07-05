@@ -1,4 +1,4 @@
-# 🎲 Dice Game
+# 🎲 Dice game
 
 A simple and interactive Dice Game built using **HTML**, **CSS**, and **JavaScript**.
 
