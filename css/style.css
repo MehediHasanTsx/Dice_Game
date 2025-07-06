@@ -142,7 +142,9 @@ image {
   padding: 10px;
 }
 
-#player_1 {
+#player_1,
+#player_2,
+#player_3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,41 +162,6 @@ image {
   box-shadow: 2px 4px 10px 6px #7753ed6d;
 }
 
-#player_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-  width: 230px;
-  height: 270px;
-  background-color: #16161e;
-  border-radius: 18px;
-  animation: fadeIn 1s ease-out forwards;
-  box-shadow: 2px 4px 10px 6px #7753ed6d;
-}
-
-#player_3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 25px;
-  padding-left: 25px;
-  width: 230px;
-  height: 270px;
-  background-color: #16161e;
-  border-radius: 18px;
-  animation: fadeIn 1.2s ease-out forwards;
-  box-shadow: 2px 4px 10px 6px #7753ed6d;
-}
 
 h2 {
   font-size: 32px;
@@ -582,210 +549,192 @@ h2 {
   }
 }
 
-@media (max-width: 800px) {
+
+@media(max-width: 700px) {
   .wrapper {
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 30px;
     gap: 15px;
+
+  }
+
+  .heading {
+    gap: 10px;
+    margin: 0;
   }
 
   .head_text {
     margin: 10px;
-    font-size: 32px;
+    font-size: 26px;
+    height: 28px;
   }
 
   .head_dice {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
   }
 
   h2 {
-    font-size: 20px;
-    height: 28px;
+    font-size: 18px;
+    height: 26px;
     margin: 0;
   }
 
-  #dice_one,
-  #dice_two,
-  #dice_three {
-    height: 45px;
-    width: 45px;
+  .player {
+    gap: 20px;
   }
-
 
   #player_1,
   #player_2,
   #player_3 {
-    width: 120px;
+    width: 80px;
     height: auto;
     padding: 20px;
+    box-shadow: 0px 0px 6px 2px #7753ed6d;
   }
 
+  .dice_player {
+    height: 45px;
+    width: 45px;
+  }
 
   .btn {
-    gap: 20px;
+    gap: 25px;
+    flex-direction: column;
   }
 
   #result {
-    gap: 10px;
+    gap: 15px;
     text-align: center;
   }
 
   #result_text {
-    font-size: 23px;
-    margin: 10px;
+    font-size: 20px;
+    height: 26px;
   }
 
   #counter,
   #roll_btn,
   #reset_btn {
     /* width: 80%; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
     justify-content: center;
-    width: 110px;
+
   }
 
   .chicken_img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
   .roll_img,
   .reset_img {
-    left: 10px;
-    height: 20px;
-    width: 20px;
+    left: 14px;
+    height: 25px;
+    width: 25px;
   }
 
   .footer_text {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
-@media(max-width: 630px) {
+@media(max-width: 460px) {
+  .wrapper {
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 30px;
+    gap: 10px;
 
-  #roll_label_1,
-  #roll_label_2,
-  #roll_label_3 {
-    max-width: 30px;
+  }
+
+  .heading {
+    gap: 10px;
+    margin: 0;
+  }
+
+  .head_text {
+    margin: 10px;
+    font-size: 26px;
+    height: 28px;
+  }
+
+  .head_dice {
+    height: 30px;
+    width: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+    height: 25px;
+    margin: 0;
   }
 
   .player {
-    flex-direction: column;
     gap: 15px;
   }
 
   #player_1,
   #player_2,
   #player_3 {
-    flex-direction: row;
-    width: 300px;
-    height: 80px;
+    width: 60px;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 6px 2px #7753ed6d;
   }
 
-}
-
-@media (max-width: 414px) {
-  .wrapper {
-    gap: 10px;
-    padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .head_text {
-    margin: 10px;
-    font-size: 32px;
-  }
-
-  .head_dice {
+  .dice_player {
     height: 40px;
     width: 40px;
   }
 
-  h2 {
-    font-size: 20px;
-    height: 28px;
-    margin: 0;
-  }
-
-  #dice_one,
-  #dice_two,
-  #dice_three {
-    height: 45px;
-    width: 45px;
-  }
-
-  .player {
-    flex-direction: row;
-    gap: 20px;
-    padding: 5px;
-  }
-
-  #player_1,
-  #player_2,
-  #player_3 {
-    width: 90px;
-    height: auto;
-    padding: 10px;
-    flex-direction: column;
-  }
-
-  #roll_label_1,
-  #roll_label_2,
-  #roll_label_3 {
-    max-width: 100%;
-  }
-
   .btn {
     gap: 20px;
+    flex-direction: column;
   }
 
   #result {
-    gap: 0px;
+    gap: 10px;
     text-align: center;
-    align-items: center;
-    justify-content: center;
   }
 
   #result_text {
-    font-size: 20px;
-    margin: 10px;
-    height: 28px;
-  }
-
-  .btn {
-    flex-direction: column;
+    font-size: 18px;
+    height: 26px;
+    margin: 0;
   }
 
   #counter,
   #roll_btn,
   #reset_btn {
     /* width: 80%; */
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 18px;
     justify-content: center;
-    width: 110px;
+
   }
 
   .chicken_img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .roll_img,
   .reset_img {
-    left: 10px;
-    height: 20px;
-    width: 20px;
+    left: 14px;
+    height: 25px;
+    width: 25px;
   }
 
   .footer_text {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
